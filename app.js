@@ -6,12 +6,6 @@ var express     = require("express"),
 	cheerio = require('cheerio'),
 	request = require('request');
 
-// var siteUrl ="https://remoteok.io/"
-// var fetchData = async () => {
-//   var result = await axios.get(siteUrl);
-//   return cheerio.load(result.data);
-// };
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -89,15 +83,6 @@ app.get('/', function(req, res, next) {
 	});
 
 });
-
-
-
- // var title = $('#header <h1>').text();
- // console.log(title);
-//  //root route
-// app.get("/", function(req, res){
-//     res.render("index", {title:title});
-// });
 
 var port = 3200 || process.env.PORT;
 app.listen(port, function () {
