@@ -9,7 +9,7 @@
   "author": "BH",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "cheerio": "^1.0.0-rc.3",
